@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearlayout"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration form"
+        android:layout_margin="20dp"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#E91E63"
+       />
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:layout_margin="10dp"
+        android:inputType="textPersonName"
+        android:textColor="#F44336"
+        />
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:layout_margin="10dp"
+        android:inputType="textPersonName"
+        android:textColor="#F44336"
+        />
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:layout_margin="10dp"
+        android:inputType="phone"
+        android:textColor="#F44336"
+        />
+    <TextView
+        android:id="@+id/N_passengers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No. of passengers"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#009688"
+        />
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Journey Type"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#03A9F4"
+        />
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Departure Date/Time"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#FF9800"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+
+        android:inputType="phone"
+        android:layout_margin="10dp"
+        android:id="@+id/date"
+
+        />
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:layout_margin="10dp"
+        android:hint="Time"
+        android:id="@+id/time"
+        />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#E91E63"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_margin="40dp"
+        android:textSize="20dp"
+        />
+
+</LinearLayout>
